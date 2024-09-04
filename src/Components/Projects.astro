@@ -45,25 +45,25 @@ const PROJECTS = [
   {
     title: "SystemAgrop - Sistema de gestión de ventas y servicios.",
     description:
-      "Sistema para la gestión de compras de implementos agropecuarios, que también permite agendar citas veterinarias y servicios de peluquería canina. Creado desde cero utilizando Flask, Jinja2, Python, Bootstrap, HTML, y CSS",
+      "Sistema para la gestión de compras de implementos agropecuarios, que también permite agendar citas veterinarias y servicios de peluquería canina. Creado desde cero utilizando Flask, Jinja2, Python, Bootstrap, HTML, CSS y MySQL",
     github: "https://github.com/ceronAngela/SystemAgrop.git",
     image: "/projects/seteagroup2.png",
     tags: [TAGS.FLASK, TAGS.PYTHON, TAGS.BOOTSTRAP],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Bonita Peluquería - Sistema Integral para la gestión de una peluquería",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
+      "Bonita Peluquería es un sistema integral diseñado para optimizar la gestión de citas y la administración de una peluquería. Este sistema permite a los clientes agendar citas y visualizar servicios, y a los administradores manejar tanto las citas como la contabilidad del negocio. Proyecto creado desde cero utilizando Laravel, vite, php, Bootstrap, HTML, CSS y MySQL",
+    github: "https://github.com/ceronAngela/BonitaPeluqueria.git",
+    image: "/projects/bonitapeluqueria.png",
     tags: [TAGS.LARAVEL, TAGS.PHP, TAGS.BOOTSTRAP],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "SOFTABRAHAM - Sistema para la gestión educativa",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
+      "Sistema de gestión educativa está diseñado para optimizar la administración de estudiantes, profesores y cursos dentro de una institución. Ofrece herramientas para registrar calificaciones, establecer porcentajes de evaluación, y generar informes detallados, como boletines de calificaciones. Proyecto creado desde cero utilizando CodeIgniter, php, Bootstrap, HTML, CSS y MySQL",
+    github: "https://github.com/ceronAngela/SoftAbraham.git",
+    image: "/projects/softAbraham.png",
     tags: [TAGS.CodeIgniter, TAGS.PHP, TAGS.BOOTSTRAP],
   },
 ]
@@ -71,7 +71,7 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, tags, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -97,7 +97,7 @@ const PROJECTS = [
           ))}
         </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400 text-justify">{description}</div>
+      <div class="mt-2 text-gray-700 dark:text-gray-200 text-justify">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (
             <LinkButton href={github}>
@@ -106,12 +106,12 @@ const PROJECTS = [
               
             </LinkButton>
           )}
-          {link && (
+          {/* {link && (
             <LinkButton href={link}>
               <Link class="size-4" />
               Preview
             </LinkButton>
-          )}
+          )} */}
         </footer>
     </div>
   </div>

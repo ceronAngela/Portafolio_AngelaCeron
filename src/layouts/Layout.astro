@@ -2,7 +2,7 @@
 import "@fontsource/onest"
 
 import Header from "../Components/Header.astro";
-//import Footer from "../Components/Footer.astro"
+import Footer from "../Components/Footer.astro"
 import { ViewTransitions } from "astro:transitions";
 
 interface Props {
@@ -33,7 +33,7 @@ const { description, title } = Astro.props;
     </div>
     <Header />
     <slot />
-    <!-- <Footer /> -->
+    <Footer />
     <style is:global>
       :root {
         color-scheme: light dark;
